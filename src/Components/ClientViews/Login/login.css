@@ -1,0 +1,80 @@
+h1 {
+    margin: 6px 0px;
+    font-size: x-large;
+}
+
+.login-form-container {
+    background: lightgreen;
+    padding: 10px 25px;
+    border-radius: 15px;
+    position: relative; /* Make sure the container has a relative position */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.login-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Adjust margin for spacing */
+    width: 100%; /* Ensure full width */
+    position: relative; /* Position relative to contain the absolute positioned error message */
+}
+
+.login-form label {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 17px;
+}
+
+.login-form input {
+    padding: 8px;
+    border-radius: 25px;
+    width: 20vw; /* Adjust width if needed */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border to make it visually appealing */
+    margin-bottom: 4px; /* Adjust margin to prevent overlap with error message */
+    position: relative; /* Ensure position is relative for error positioning */
+}
+
+.login-form input:focus {
+    border-color: darkgreen;
+}
+
+.login-form .error {
+    position: absolute;
+    top: 100%; /* Position error below the input */
+    left: 0;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    margin-top: -1px; /* Space between input and error message */
+    z-index: 10; /* Ensure the error message is on top */
+    margin-left: 5px;
+}
+
+.login-form button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: green; /* Default button background */
+    color: white; /* Default button text color */
+}
+
+.login-form button:hover {
+    background-color: darkgreen;
+}
+
+.login-form p {
+    font-size: 12px; /* Adjust font size if needed */
+    color: red;
+    margin: 0;
+    z-index: 5; /* Ensure error messages appear on top */
+}

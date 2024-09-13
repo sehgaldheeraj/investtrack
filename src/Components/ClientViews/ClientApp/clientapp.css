@@ -1,0 +1,111 @@
+.home-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 86vh;
+    width: 98vw;
+}
+.landing-page-container, .investment-input-container {
+    flex: 1;
+}
+.landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landing-page-container p{
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+.landing-page-container h2{
+    margin-bottom: 0;
+}
+
+.right-container {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+}
+.investment-input-container {
+    background: lightgreen;
+    padding: 10px 25px;
+    border-radius: 15px;
+    position: relative; /* Make sure the container has a relative position */
+    margin-right: 16px;
+    margin-left: 2px;
+}
+.investment-input-container h2 {
+    margin: 13px;
+}
+
+.invest-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure it takes full width */
+}
+
+.invest-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px; /* Adjust margin for spacing */
+    
+    position: relative; /* Position relative to contain the absolute positioned error message */
+}
+
+.invest-form label {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 17px;
+}
+
+.invest-form input {
+    padding: 8px;
+    border-radius: 25px;
+    width: 20vw; /* Adjust width if needed */
+    text-align: center;
+    border: 1px solid #ccc; /* Add a border to make it visually appealing */
+    margin-bottom: 4px; /* Adjust margin to prevent overlap with error message */
+    position: relative; /* Ensure position is relative for error positioning */
+}
+
+.invest-form input:focus {
+    border-color: darkgreen;
+}
+
+.invest-form .error {
+    position: absolute;
+    top: 100%; /* Position error below the input */
+    left: 0;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    margin-top: -1px; /* Space between input and error message */
+    z-index: 10; /* Ensure the error message is on top */
+    margin-left: 5px;
+}
+
+.invest-form button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: green; /* Default button background */
+    color: white; /* Default button text color */
+}
+
+.invest-form button:hover {
+    background-color: darkgreen;
+}
+
+.invest-form p {
+    font-size: 12px; /* Adjust font size if needed */
+    color: red;
+    margin: 0;
+    z-index: 5; /* Ensure error messages appear on top */
+}
+

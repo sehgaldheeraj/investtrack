@@ -1,0 +1,56 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Makes the navbar stick to the top */
+    top: 0; /* Position it at the top of the viewport */
+    background-color: #fff; /* Background color to cover content behind */
+    z-index: 1000; /* Ensures it stays above other content */
+    padding: 5px 20px; /* Add some padding for better appearance */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.navbar-container h1{
+    margin-left: 20px;
+}
+.user-container {
+    padding: 1px;
+}
+.auth-user-container {
+    display: flex;
+    align-items: center;
+}
+.user-container button {
+    border: 1px solid green;
+    padding: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navbar-container button,.auth-user-container button {
+    border: 1px solid green;
+    padding: 10px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.navbar-container button:hover ,.auth-user-container button:hover {
+    background-color: green;
+    color: white;
+}
+
+
+/* .user-container .active {
+    background-color: green;
+    color: white;
+} */
+
+button.active {
+    background-color: green;
+    color: white;
+}
+
+button.inactive {
+    background-color: transparent;
+    color: black;
+}

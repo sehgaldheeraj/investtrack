@@ -1,0 +1,129 @@
+/* h1 {
+    margin: 6px 0px;
+    font-size: x-large;
+}
+.register-form-container {
+    background: lightgreen;
+    padding: 10px 25px;
+    border-radius: 15px;
+}
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.register-form input {
+    padding: 8px;
+    border-radius: 25px;
+    width: 20vw;
+    text-align: center;
+    border: none;
+    margin-bottom: 12px;
+}
+.register-form input :focus {
+    border: 1px solid;
+}
+.register-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+}
+.register-form label {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 17px;
+}
+.register-form button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.register-form button :hover {
+    background-color: darkgreen;
+}
+.register-form p {
+    font-size: 10px;
+    color: red;
+    margin: 0px;
+    z-index: 5;
+} */
+ /* register.css */
+
+/* register.css */
+
+h1 {
+    margin: 6px 0px;
+    font-size: x-large;
+}
+
+.register-form-container {
+    background: lightgreen;
+    padding: 10px 25px;
+    border-radius: 15px;
+    position: relative; /* Make sure the container has a relative position */
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.register-form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+    width: 100%;
+    position: relative; /* Position relative to contain the absolute positioned error message */
+}
+
+.register-form label {
+    text-align: left;
+    font-size: 13px;
+    margin-left: 17px;
+}
+
+.register-form input {
+    padding: 8px;
+    border-radius: 25px;
+    width: 20vw;
+    text-align: center;
+    border: 1px solid #ccc;
+    position: relative; /* Ensure position is relative for error positioning */
+}
+
+.register-form input:focus {
+    border-color: darkgreen;
+}
+
+.register-form .error {
+    position: absolute;
+    top: 100%; /* Position error below the input */
+    left: 0;
+    width: 100%;
+    color: red;
+    font-size: 12px;
+    margin-top: -1px;
+    z-index: 10; /* Ensure the error message is on top */
+    margin-left: 5px;
+}
+
+.register-form button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: green;
+    color: white;
+}
+
+.register-form button:hover {
+    background-color: darkgreen;
+}
+
