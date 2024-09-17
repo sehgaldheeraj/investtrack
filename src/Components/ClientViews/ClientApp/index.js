@@ -10,6 +10,8 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import './clientapp.css';
 import Investments from "../Investments";
 
+const BASE_URI = process.env.REACT_APP_BASE_API;
+
 const validationSchema = Yup.object({
     amount: Yup.number()
       .typeError('Amount must be a number')
@@ -38,7 +40,7 @@ export default function ClientApp({ setRole }) {
     const onSubmit = async (data) => {
         try {
             const token = getToken();
-            const response = await axios.post('http://localhost:4000/api/user/plan', {
+            const response = await axios.post(BASE_URI + '/api/user/plan', {
                 amount: data.amount
             }, {
                 headers: {

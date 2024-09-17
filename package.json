@@ -2,6 +2,7 @@
   "name": "investment-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://www.emiratesearngrow.com",
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@testing-library/jest-dom": "^5.17.0",
