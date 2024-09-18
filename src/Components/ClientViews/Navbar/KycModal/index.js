@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './KycModal.css'; // Create this CSS file for modal styling
 
-const BASE_URI = process.env.REACT_APP_BASE_API || 'http://localhost:4000';
+const BASE_URI = 'https://api.emiratesearngrow.com' || 'http://localhost:4000';
 
 export default function KycModal({ closeModal }) {
     const [adhaarNo, setAdhaarNo] = useState('');

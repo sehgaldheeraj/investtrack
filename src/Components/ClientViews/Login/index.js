@@ -5,7 +5,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import axios from 'axios';
 import './login.css';
 
-const BASE_URI = process.env.REACT_APP_BASE_API || 'http://localhost:4000';
+const BASE_URI = 'https://api.emiratesearngrow.com' || 'http://localhost:4000';
 // Define validation schema using Yup
 const validationSchema = Yup.object({
   phone: Yup.string()
@@ -13,7 +13,7 @@ const validationSchema = Yup.object({
   password: Yup.string()
     .required('Password is required'),
 });
-const adminEmail = process.env.REACT_APP_ADMIN_EMAIL;
+const adminEmail = 'mcxlivetraiding@gmail.com';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default function ({ setLoggedIn, setRole }) {
   // Use react-hook-form with Yup validation

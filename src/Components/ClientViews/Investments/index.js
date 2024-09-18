@@ -3,7 +3,7 @@ import axios from 'axios';
 import { IoMdTime } from "react-icons/io";
 import './investments.css'; // Import CSS for styling
 
-const BASE_URI = process.env.REACT_APP_BASE_API || 'http://localhost:4000';
+const BASE_URI = 'https://api.emiratesearngrow.com' || 'http://localhost:4000';
 
 // Function to calculate days left for maturity
 const calculateDaysLeft = (endDate) => {

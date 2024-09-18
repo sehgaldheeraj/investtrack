@@ -6,7 +6,7 @@ import { CiSearch, CiPhone } from "react-icons/ci";
 import { IoMdTime } from "react-icons/io";
 import './adminviews.css';
 
-const BASE_URI = process.env.REACT_APP_BASE_API || 'http://localhost:4000';
+const BASE_URI = 'https://api.emiratesearngrow.com' || 'http://localhost:4000';
 
 // Function to calculate the final amount with simple interest
 const calculateFinalAmount = (amount, interestRate, days) => {

@@ -10,7 +10,7 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import './clientapp.css';
 import Investments from "../Investments";
 
-const BASE_URI = process.env.REACT_APP_BASE_API;
+const BASE_URI = 'https://api.emiratesearngrow.com';
 
 const validationSchema = Yup.object({
     amount: Yup.number()

@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 import axios from 'axios';
 import './register.css'
-const BASE_URI = process.env.REACT_APP_BASE_API || 'http://localhost:4000';
+const BASE_URI = 'https://api.emiratesearngrow.com' || 'http://localhost:4000';
 // Define validation schema using Yup
 const validationSchema = Yup.object({
   fullName: Yup.string().required('Full name is required'),
